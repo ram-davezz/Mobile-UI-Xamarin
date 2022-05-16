@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="MobileAppUI.MainPage">
+
+    <Grid BackgroundColor="#eff1f5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2.7*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2.7*"/>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Row="1" Grid.Column="1" Spacing="-5">
+            <Label Text="Company" FontSize="30" FontFamily="Robotoregular"/>
+            <Label Text="We are a company" FontSize="12"  HorizontalTextAlignment="Center" TextColor="DarkGray"/>
+        </StackLayout>
+
+        <Frame Grid.Row="1" Grid.Column="3" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="0" WidthRequest="45" HorizontalOptions="End">
+            <Image Source="company.png" HorizontalOptions="Center"/>
+        </Frame>
+
+        <Label Text="Choose your power" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" FontSize="16"/>
+
+        <Frame Grid.Row="4" Grid.Column="1" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="10,10,10,10">
+            <StackLayout Grid.Row="4" Grid.Column="1" Spacing="-4">
+                <Image Source="mypolicies.png" HorizontalOptions="Start"/>
+                <Label Text="My Policies" FontFamily="Robotomedium" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Label Text="Policies that meet your needs" FontFamily="Robotoregular" FontSize="12" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+        <Button Grid.Row="4" Grid.Column="1" BackgroundColor="Transparent" TextColor="Transparent" x:Name="MyPolicies" Clicked="MyPolicies_Clicked"/>
+
+        <Frame Grid.Row="4" Grid.Column="3" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="10,0,10,10">
+            <StackLayout Grid.Row="4" Grid.Column="3" Spacing="-5">
+                <Image Source="yourclaims.png" HorizontalOptions="Start"/>
+                <Label Text="Your Claims" FontFamily="Robotomedium" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Label Text="Your claims and details" FontSize="12" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+        <Button Grid.Row="4" Grid.Column="3" BackgroundColor="Transparent" TextColor="Transparent"/>
+
+        <Frame Grid.Row="6" Grid.Column="1" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="10,1,10,10">
+            <StackLayout Grid.Row="6" Grid.Column="1" Spacing="-4">
+                <Image Source="getaquote.png" HorizontalOptions="Start"/>
+                <Label Text="Get a Quote" FontFamily="Robotomedium" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Label Text="Reach out to our executives" FontSize="12" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+        <Button Grid.Row="6" Grid.Column="1" BackgroundColor="Transparent" TextColor="Transparent"/>
+
+        <Frame Grid.Row="6" Grid.Column="3" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="10,0,10,10">
+            <StackLayout Grid.Row="6" Grid.Column="3" Spacing="-4">
+                <Image Source="mobilepay.png" HorizontalOptions="Start"/>
+                <Label Text="Mobile Pay" FontFamily="Robotomedium" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Label Text="Stay Healthy Live Long!" FontSize="12" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+        <Button Grid.Row="6" Grid.Column="3" BackgroundColor="Transparent" TextColor="Transparent"/>
+
+
+
+        <Frame Grid.Row="8" Grid.Column="1"  Grid.ColumnSpan="3" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="10">
+            <StackLayout Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" Orientation="Horizontal">
+                <Image Source="assistance.png" HorizontalOptions="Start"/>
+                <Label Text="Get Assistance from Experts" FontFamily="Robotomedium" FontSize="18" VerticalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+        <Button Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" BackgroundColor="Transparent" TextColor="Transparent"/>
+
+
+
+        <Grid Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width=".2*"/>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width=".2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="0">
+                <StackLayout Grid.Row="0" Grid.Column="0" Spacing="-4">
+                    <Image Source="support.png" HorizontalOptions="Center" HeightRequest="30"/>
+                    <Label Text="Support" FontFamily="Robotomedium" FontSize="12" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Button Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" TextColor="Transparent"/>
+
+            <Frame Grid.Row="0" Grid.Column="2" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="0">
+                <StackLayout Grid.Row="0" Grid.Column="2" Spacing="-4">
+                    <Image Source="documents.png" HorizontalOptions="Center" HeightRequest="30"/>
+                    <Label Text="Documents" FontFamily="Robotomedium" FontSize="12" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Button Grid.Row="0" Grid.Column="2" BackgroundColor="Transparent" TextColor="Transparent"/>
+
+            <Frame Grid.Row="0" Grid.Column="4" HasShadow="True" BackgroundColor="#eff1f5"  CornerRadius="10" Padding="0">
+                <StackLayout Grid.Row="0" Grid.Column="4" Orientation="Horizontal" Spacing="-1">
+                    <Image Source="products.png" HorizontalOptions="Start" WidthRequest="30"/>
+                    <Label Text="Products" FontFamily="Robotomedium" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Button Grid.Row="0" Grid.Column="4" BackgroundColor="Transparent" TextColor="Transparent"/>
+        </Grid>
+       
+    </Grid>
+
+       
+
+      
+
+</ContentPage>
